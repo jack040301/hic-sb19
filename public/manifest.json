@@ -1,0 +1,15 @@
+{
+    "short_name": "SB19",
+    "name": "SB19 PWA",
+    "icons": [
+        {
+            "src": "/playground_assets/sb19logo.png",
+            "type": "image/png",
+            "sizes": "1024x1024"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
