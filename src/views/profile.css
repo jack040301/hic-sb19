@@ -17,7 +17,7 @@
   align-items: center;
   flex-direction: column;
   background-size: cover;
-  background-image: url("playground_assets/sb19.jpg");
+  background-image: url("/playground_assets/ourzone.jpg");
 }
 .profile-image1 {
   left: auto;
