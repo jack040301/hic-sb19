@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
@@ -10,8 +10,16 @@ import ServiceCard from '../components/service-card'
 import SecondaryButton from '../components/secondary-button'
 import Footer from '../components/footer'
 import './home.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'; 
 
 const Home = (props) => {
+
+ 
+
+  useEffect(()=>{
+    AOS.init({duration: 2000});
+  },[]);
   return (
     <div className="home-container">
       <Helmet>
@@ -22,8 +30,8 @@ const Home = (props) => {
         <div className="home-bg"></div>
         <Header></Header>
         <div className="home-container01">
-          <div className="home-container02">
-            <h1 className="home-text">Get in the Zone, Break.</h1>
+          <div className="home-container02" >
+            <h1 className="home-text">Get in the Zone, <span data-aos="zoom-in-left"> Break. </span></h1>
             <span className="home-text01">
               <span></span>
               <span>
@@ -45,7 +53,7 @@ const Home = (props) => {
       </div>
       <div className="home-section1">
         <div className="home-container03">
-          <div className="home-container04">
+          <div className="home-container04" >
             <h6 className="home-text04">
               <span>SOUND BREAK</span>
               <span></span>
@@ -60,7 +68,7 @@ const Home = (props) => {
             </span>
           </div>
           <div className="home-cards-container">
-            <div className="home-card1">
+            <div className="home-card1" data-aos="fade-right">
               <div className="home-container05">
                 <svg viewBox="0 0 1024 1024" className="home-icon">
           <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
@@ -72,7 +80,7 @@ const Home = (props) => {
               The group fandom name is A'TIN, which is pronounced as "eighteen" and in Tagalog it pronounce "Atin" meaning "ours".
               </span>
             </div>
-            <div className="home-card2">
+            <div className="home-card2" data-aos="fade-right">
               <div className="home-container06">
                 <svg
                   viewBox="0 0 1097.142857142857 1024"
@@ -87,7 +95,7 @@ const Home = (props) => {
               SB19 was formed by ShowBT Philippines, the Philippine subsidiary of ShowBT Group in Korea.
               </span>
             </div>
-            <div className="home-card3">
+            <div className="home-card3" data-aos="fade-right">
               <div className="home-container07">
                 <svg viewBox="0 0 1024 1024" className="home-icon04">
           <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
@@ -109,7 +117,7 @@ const Home = (props) => {
         />
       </div>
       <div className="home-section2">
-        <div className="home-container13">
+        <div className="home-container13" data-aos="zoom-in">
           <Label text="BACKGROUND ABOUT SB19​"></Label>
           <h2 className="home-text27 Text2XL">
             <span className="home-text28">
@@ -122,7 +130,9 @@ const Home = (props) => {
           </span>
         </div>
         <div className="home-growing-company-section">
-        <div className="home-container10">
+        <div className="home-container10" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
               <div className="home-container11">
                 <img
                   alt="image"
@@ -143,7 +153,7 @@ const Home = (props) => {
                 </span>
               </div>
             </div>
-          <div className="home-container14">
+          <div className="home-container14" data-aos="fade-left">
         
             <h3 className="home-text30 Healine">SHOW BT Philippines</h3>
             <span className="home-text31">
@@ -181,7 +191,7 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <div className="home-container22">
+        <div className="home-container22" data-aos="flip-up">
           <h6 className="home-text35">
             <span>THE MEMBERS</span>
           </h6>
@@ -197,7 +207,7 @@ const Home = (props) => {
         <div className="home-team">
           <div className="home-container23">
             <Link to="/profile" className="home-navlink">
-              <div className="home-container24">
+              <div className="home-container24" data-aos="fade-up">
                 <MemberDetails image_src="/playground_assets/pablo.jpg"></MemberDetails>
                 <div className="home-container25">
                   <div className="home-container26">
@@ -225,7 +235,7 @@ const Home = (props) => {
               </div>
             </Link>
             <Link to="/profile" className="home-navlink1">
-              <div className="home-container29">
+              <div className="home-container29" data-aos="fade-down">
                 <MemberDetails
                   heading1="Felip Jhon Suson"
                   heading11="Main Dancer, Lead Vocalist, Lead Rapper"
@@ -250,7 +260,7 @@ const Home = (props) => {
             </Link>
 
             <Link to="/profile" className="home-navlink1">
-              <div className="home-container29">
+              <div className="home-container29" data-aos="fade-up">
                 <MemberDetails
                   heading1="Justin De Dios"
                   heading11="Sub-Vocalist, Visual, Bunso"
@@ -276,7 +286,7 @@ const Home = (props) => {
 
 
             <Link to="/profile" className="home-navlink2">
-              <div className="home-container33">
+              <div className="home-container33" data-aos="fade-down">
                 <MemberDetails
                   heading1="Josh Cullen Santos"
                   heading11="Lead Rapper, Lead Dancer, Sub-Vocalist, Eldest"
@@ -308,7 +318,7 @@ const Home = (props) => {
               </div>
             </Link>
             <Link to="/profile" className="home-navlink3">
-              <div className="home-container38">
+              <div className="home-container38" data-aos="fade-up"> 
                 <MemberDetails
                   heading1="Stellvester Ajero"
                   heading11="Main Vocalist, Lead Dancer"
@@ -347,7 +357,7 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className="home-section3">
+      <div className="home-section3" data-aos="zoom-out">
         <div className="home-container44">
           <h6 className="home-text40 TextSM">
             <span>LOREM IPSUM DOLOR</span>
@@ -359,9 +369,9 @@ const Home = (props) => {
             </span>
             <br></br>
           </span>
-          <div className="home-services">
+          <div className="home-services"data-aos="zoom-in" >
             <ServiceCard></ServiceCard>
-            <div className="home-container45">
+            <div className="home-container45" >
               <div className="home-container46">
                 <svg
                       viewBox="0 0 877.7142857142857 1024"
