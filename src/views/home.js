@@ -12,6 +12,9 @@ import Footer from '../components/footer'
 import './home.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'; 
+import { Carousel } from 'react-responsive-carousel';
+import { Slider } from '../components/slider'
+
 
 const Home = (props) => {
 
@@ -359,44 +362,39 @@ const Home = (props) => {
       </div>
       <div className="home-section3" data-aos="zoom-out">
         <div className="home-container44">
+
           <h6 className="home-text40 TextSM">
-            <span>LOREM IPSUM DOLOR</span>
+            <span>Songs & Album</span>
           </h6>
-          <h3 className="home-text42 Healine">Lorem ipsum dolor sit amet</h3>
+          <h3 className="home-text42 Healine">Single's and Albums</h3>
           <span className="home-text43 TextXL">
             <span className="home-text44">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vulputate magna, quis vehicula felis. Pellentesque hendrerit risus id lectus luctus volutpat. Curabitur eget ipsum gravida, lacinia nisl consequat, rhoncus sem. Donec at ante vel libero volutpat maximus ac quis elit. Sed blandit eros a libero tincidunt vehicula
+        <br></br>
+        <br></br> 
+        <br></br>
             </span>
             <br></br>
           </span>
           <div className="home-services"data-aos="zoom-in" >
-            <ServiceCard></ServiceCard>
-            <div className="home-container45" >
-              <div className="home-container46">
-                <svg
-                      viewBox="0 0 877.7142857142857 1024"
-                      className="home-icon41"
-                    >
-                      <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-                    </svg>
-              </div>
-              <h1 className="home-text45 TextXL">Lorem ipsum dolor sit amet</h1>
-              <span className="home-text46">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vulputate magna, quis vehicula felis. Pellentesque hendrerit risus id lectus luctus volutpat. Curabitur eget ipsum gravida, lacinia nisl consequat, rhoncus sem. Donec at ante vel libero volutpat maximus ac quis elit. Sed blandit eros a libero tincidunt vehicula
-              </span>
-            </div>
-            <div className="home-container47">
-              <div className="home-container48">
-                <svg viewBox="0 0 1024 1024" className="home-icon43">
-                      <path d="M783.104 239.957c-74.667-74.283-165.888-111.957-271.104-111.957-106.197 0-197.675 37.717-271.915 112-74.368 74.283-112.085 165.845-112.085 272 0 105.173 37.675 196.395 111.957 271.104 74.283 74.923 165.803 112.896 272.043 112.896 105.259 0 196.48-37.973 271.189-112.768 74.88-74.795 112.811-166.059 112.811-271.232 0-106.155-37.973-197.717-112.896-272.043zM722.859 722.901c-48.512 48.597-103.936 76.288-168.192 84.693v-210.261h85.333v-85.333h-85.333v-59.733c0-14.123 11.477-25.6 25.643-25.6h59.691v-85.333h-59.605c-31.659 0-58.069 11.648-79.232 35.072-21.163 23.339-31.829 51.84-31.829 85.675v49.92h-85.333v85.333h85.333v210.347c-64.939-8.32-120.576-36.053-168.832-84.651-58.667-59.051-87.168-128.085-87.168-211.029 0-83.883 28.459-153.088 87.125-211.627 58.453-58.581 127.659-87.040 211.541-87.040 82.987 0 151.979 28.501 210.987 87.168 59.008 58.539 87.68 127.744 87.68 211.499 0 82.816-28.715 151.851-87.808 210.901z"></path>
-                    </svg>
-              </div>
-              <h1 className="home-text47 TextXL">Lorem ipsum dolor sit amet</h1>
-              <span className="home-text48">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vulputate magna, quis vehicula felis. Pellentesque hendrerit risus id lectus luctus volutpat. Curabitur eget ipsum gravida, lacinia nisl consequat, rhoncus sem. Donec at ante vel libero volutpat maximus ac quis elit. Sed blandit eros a libero tincidunt vehicula
-              </span>
-            </div>
+      
+          <div className="home-container45" >
+              <div className="home-cont46">
+              <div className='SlideApp'>
+          <Slider/>
           </div>
+               </div>
+            </div>
+            <span className="home-text44">
+        <br></br>
+        <br></br> 
+        <br></br>
+        <br></br> 
+        <br></br> 
+
+            </span>
+          </div>
+
+    
        {/*    <div className="home-contact">
             <Label text="MESSAGE US"></Label>
             <h2 className="home-text49">Type in the bellow form</h2>
