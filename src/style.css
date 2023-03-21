@@ -30,7 +30,15 @@
   --dl-space-space-twoandhalf: 2.5rem;
   --dl-space-space-unitandhalf: 1.5rem;
   --dl-space-space-triplequarter: 0.75rem;
+  overflow:   scroll; /* Internet Explorer 10+ */
+
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 .teleport-show {
   display: flex !important;
   transform: none !important;

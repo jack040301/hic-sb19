@@ -16,7 +16,7 @@
   flex-direction: column;
   background-size: cover;
   justify-content: flex-start;
-  background-image: url("/playground_assets/photo-1-1500h.jpg");
+  background-image: url("/playground_assets/devbackground.jpg");
 }
 .blog-post-fixed-header {
   width: 100%;

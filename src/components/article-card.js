@@ -37,13 +37,13 @@ const ArticleCard = (props) => {
 
 ArticleCard.defaultProps = {
   avatar_src: '15958451-f790-4024-a70e-cc38b82637f2',
-  name: 'Laura Hanks',
-  new_prop: 'Portofino one of the best for remote working',
+  name: 'Jacqueline Porral',
+  new_prop: '',
   image_src: '/playground_assets/city-1-1400w.jpg',
-  time: 'Published 3 days ago',
+  time: 'Bachelor of Science in Computer Science',
   avatar_alt: 'avatar',
   description:
-    "Finding temporary housing should be as easy as renting an Airbnb. That's th e idea behinf portofino, which raised $65 million to expand its pet sitting businesses. This come as the right move for the investment while the planet is moving on work from home...",
+    "A 22 years old Aspiring Backend Developer, Leader and Programmer, currently a student at the University of Caloocan City - North Campus. Have an experience in Javascript, PHP, Dart, C# and VB.Net languages aside from that she also know NOSQL and SQL which is Firebase and mySQL. ",
   image_alt: 'image',
 }
 
