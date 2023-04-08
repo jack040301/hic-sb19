@@ -79,16 +79,13 @@ const BlogPost = (props) => {
           - 2 Corinthians 4:16-18
           </span>
         </div>
-        <ArticleCard avatar_src="/playground_assets/team3-200h.jpg"></ArticleCard>
+        <ArticleCard avatar_src="/playground_assets/jacavatar.jpg"></ArticleCard>
         <ArticleCard
           name="Demverleen Espinola"
-          time="Bachelor of Science in Computer Science"
-          title="MateLabs mixes learning with IFTTT"
-          image_src="/playground_assets/team3-200h.jpg"
-          avatar_src="/playground_assets/team2-200h.jpg"
-          description="We&apos;ve got time, but we are only doing what they say and want. I
-          do not want to live as I will never die, cause life&apos;s too
-          short, and I do not want to drown myself, as others would like"
+          time="BS in Computer Science"
+          image_src="/playground_assets/dem.jpg"
+          avatar_src="/playground_assets/dem.jpg"
+          description="Currently a student at the University of Caloocan City - North Campus. Have an experience in Javascript, PHP, Dart, C# and VB.Net languages aside from that she also know NOSQL and SQL which is Firebase and mySQL."
         ></ArticleCard>
 
       </div>

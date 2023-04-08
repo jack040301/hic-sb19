@@ -70,41 +70,41 @@ const Home = (props) => {
             </span>
           </div>
           <div className="home-cards-container">
-            <div className="home-card1" data-aos="fade-right">
-              <div className="home-container05">
-                <svg viewBox="0 0 1024 1024" className="home-icon">
+            <div className="home-card3" data-aos="fade-right">
+           {/*   <div className="home-container05">
+                 <svg viewBox="0 0 1024 1024" className="home-icon">
           <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
                 
-                </svg>
-              </div>
-              <h6 className="home-text10 TextXL">ATIN</h6>
-              <span className="home-text11">
+                </svg> 
+              </div>*/}
+              <h6 className="home-text04 TextXL">ATIN</h6>
+              <span className="home-text15">
               The group fandom name is A'TIN, which is pronounced as "eighteen" and in Tagalog it pronounce "Atin" meaning "ours".
               </span>
             </div>
-            <div className="home-card2" data-aos="fade-right">
-              <div className="home-container06">
+            <div className="home-card3" data-aos="fade-right">
+             {/*  <div className="home-container06">
                 <svg
                   viewBox="0 0 1097.142857142857 1024"
                   className="home-icon02"
                 >
           <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
                   
-                </svg>
-              </div>
-              <h6 className="home-text12 TextXL">SHOW BT PHILIPPINES</h6>
-              <span className="home-text13">
+                </svg> 
+              </div>*/}
+              <h6 className="home-text04 TextXL">SHOW BT PHILIPPINES</h6>
+              <span className="home-text15">
               SB19 was formed by ShowBT Philippines, the Philippine subsidiary of ShowBT Group in Korea.
               </span>
             </div>
             <div className="home-card3" data-aos="fade-right">
-              <div className="home-container07">
+            {/*   <div className="home-container07">
                 <svg viewBox="0 0 1024 1024" className="home-icon04">
           <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
                 
                 </svg>
-              </div>
-              <h6 className="home-text14 TextXL">Go Up</h6>
+              </div> */}
+              <h6 className="home-text04 TextXL">Go Up</h6>
               <span className="home-text15">
               Go up is their "last shot" song. They gained public attention after the dance practice video of the song.
               </span>
@@ -142,14 +142,15 @@ const Home = (props) => {
                   className="home-image2"
                 />
               </div>
+              
               <div className="home-container12">
                 <h4 className="home-text23 Healine">
-                  <span className="home-text24">SB19</span>
+                  <span className="home-text24">SB19 - Our Zone</span>
                   <br></br>
                 </h4>
                 <span className="home-text25">
                   <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vulputate magna, quis vehicula felis. Pellentesque hendrerit risus id lectus luctus volutpat. Curabitur eget ipsum gravida, lacinia nisl consequat, rhoncus sem. 
+                  special celebration of the group’s third year in the industry. The name Our Zone comes from the fact that the boys are ready to share what the zone means to them and basically invite us into their space. This actually marks the first time the group is celebrating their anniversary through a concert. 
                   </span>
                   <br></br>
                 </span>
@@ -184,7 +185,7 @@ const Home = (props) => {
                     </svg>
                     </a>
               </div>
-              <span className="home-text33">SB19 Instagram</span>
+              <span className="home-text33">ShowBT Instagram</span>
             </div>
             <div className="home-container20">
               <div className="home-container32">
@@ -197,7 +198,7 @@ const Home = (props) => {
                     </svg>
                     </a>
               </div>
-              <span className="home-text34">SB19 Twitter</span>
+              <span className="home-text34">ShowBT Twitter</span>
             </div>
           </div>
         </div>
