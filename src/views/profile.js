@@ -125,12 +125,10 @@ const Profile = (props) => {
       <br></br>
 
 {/* josh */}
-
       <div className="profile-container01">
         <div className="profile-container02">
           <div className="profile-container03">
  
-          
             <Counter type="Youtube" number="222k"></Counter>
             <Counter type="Instagram" number="422k"></Counter> 
             <Counter type="Twitter" number="351.4k"></Counter> 
@@ -225,7 +223,7 @@ const Profile = (props) => {
       <br></br>
       <br></br>
 
-{/* stell */}
+{/* stell profile*/}
       <div className="profile-container01">
         <div className="profile-container02">
           <div className="profile-container03">
