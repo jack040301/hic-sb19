@@ -17,7 +17,7 @@ import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min'
 const Home = (props) => {
 
   
-  const { setStringToSend } = useContext(StringContext);
+  /* const { setStringToSend } = useContext(StringContext); */
 
 
 
@@ -214,7 +214,7 @@ const Home = (props) => {
         <div className="home-container22" data-aos="flip-up">
           <h6 className="home-text35">
             <span>THE MEMBERS</span>
-            <button type="button"  onClick={handleClick}> hii</button>
+{/*             <button type="button"  onClick={handleClick}> hii</button> */}
 
           </h6>
           <h3 className="home-text37 Healine">
