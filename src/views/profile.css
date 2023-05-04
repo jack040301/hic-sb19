@@ -194,6 +194,14 @@
 }
 .profile-text5 {
   color: var(--dl-color-secondary-300);
+  
+}
+.profile-text0 {
+  color: var(--dl-color-secondary-300);
+  white-space: pre-wrap;
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: center;
 }
 .profile-text6 {
   color: var(--dl-color-pimary-500);
