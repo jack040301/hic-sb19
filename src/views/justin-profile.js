@@ -54,7 +54,7 @@ const JDProfile = (props) => {
            id="justin-id"
             alt="image"
             src="/playground_assets/justin.jpg"
-            className="profile-image2"
+            className="profile-image3"
           />
           <div className="profile-container04">
             {/* twitter justin*/}

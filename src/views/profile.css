@@ -85,6 +85,21 @@
   box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);
   object-fit: cover;
   border-radius: var(--dl-radius-radius-round);
+
+}
+.profile-image3 {
+  top: -60%;
+  left: 0px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+  bottom: auto;
+  margin: auto;
+  position: absolute;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-round);
+
 }
 .profile-container04 {
   flex: 0 0 auto;
