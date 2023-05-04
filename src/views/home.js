@@ -12,16 +12,23 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'; 
 
 import { Slider } from '../components/slider'
+import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min'
 
 
 
 const Home = (props) => {
 
- 
+
+  const pablo = 'pablo-id';
+  const josh = 'josh-id';
+  const stell = 'stell-id';
+  const ken = 'ken-id';
+  const justin = 'justin-id';
 
   useEffect(()=>{
     AOS.init({duration: 2000});
   },[]);
+  
   return (
     <div className="home-container">
       <Helmet>
@@ -217,13 +224,16 @@ const Home = (props) => {
         </div>
         <div className="home-team">
           <div className="home-container23">
-            <Link to="/profile" className="home-navlink">
+            
+          <Link to={`/pablo-profile#${pablo}`} className="home-navlink">
+              {/* <Link to="/profile" className="home-navlink"> */}
               <div className="home-container24" data-aos="fade-up">
                 <MemberDetails image_src="/playground_assets/pablo.jpg"></MemberDetails>
             
               </div>
             </Link>
-            <Link to="/profile" className="home-navlink1">
+             {/* <Link to="ken-profile" className="home-navlink1"> */}
+            <Link to={`/ken-profile#${ken}`} className="home-navlink">
               <div className="home-container29" data-aos="fade-down">
                 <MemberDetails
                   heading1="Felip Jhon Suson"
@@ -234,7 +244,9 @@ const Home = (props) => {
               </div>
             </Link>
 
-            <Link to="/profile" className="home-navlink1">
+           
+
+            <Link to={`/justin-profile#${justin}`} className="home-navlink">
               <div className="home-container29" data-aos="fade-up">
                 <MemberDetails
                   heading1="Justin De Dios"
@@ -246,7 +258,7 @@ const Home = (props) => {
             </Link>
 
 
-            <Link to="/profile" className="home-navlink2">
+            <Link to={`/josh-profile#${josh}`} className="home-navlink1">
               <div className="home-container33" data-aos="fade-down">
                 <MemberDetails
                   heading1="Josh Cullen Santos"
@@ -256,7 +268,8 @@ const Home = (props) => {
            
               </div>
             </Link>
-            <Link to="/profile" className="home-navlink3">
+            {/* <Link to={`/profile#${stell}`} className="home-navlink3"> */}
+            <Link to={`/stell-profile#${stell}`} className="home-navlink1">
               <div className="home-container38" data-aos="fade-up"> 
                 <MemberDetails
                   heading1="Stellvester Ajero"
