@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext,useState} from 'react'
 
 import { Helmet } from 'react-helmet'
 
@@ -8,13 +8,20 @@ import PrimaryButton from '../components/primary-button'
 import SecondaryButton from '../components/secondary-button'
 import Footer from '../components/footer'
 import './profile.css'
+import ProfileCard from './profile-card'
+import { StringContext } from '../views/context'
 
 const Profile = (props) => {
+
+  /* const { string } = useContext(StringContext); */
+
+
+
   return (
     <div className="profile-container">
       <Helmet>
         <title>Profile - SB19</title>
-        <meta property="og:title" content="Profile - Notus Pro" />
+        <meta property="og:title" content="Profile - SB19" />
       </Helmet>
       <div className="profile-image">
         <Header></Header>
@@ -25,16 +32,20 @@ const Profile = (props) => {
         />
         <div className="profile-bg"></div>
       </div>
-      <div className="profile-container01">
+
+      <ProfileCard name="John Paulo Nase"
+      alt="image" src="/playground_assets/pablo.jpg">
+        
+      </ProfileCard>   
+
+    {/*   <p>{string}</p>  */}
+     {/*  <div className="profile-container01">
         <div className="profile-container02">
           <div className="profile-container03">
  
-          
-            <Counter type="Youtube" number="5000"></Counter>
-            <Counter type="Instagram" number="30000"></Counter> 
-            <Counter type="Twitter" number="50000"></Counter> 
-            <Counter type="Tiktok" number="40000"></Counter> 
-
+     <br/>
+     <br/>
+    
           </div>
           <img
             alt="image"
@@ -103,7 +114,7 @@ const Profile = (props) => {
               </svg>
               <span className="profile-text3 TextSM">
               Bachelor of Arts in English degree from the Polytechnic University of the Philippines.
-              </span>
+              </span> 
             </div>
           </div>
           <div className="profile-container11"></div>
@@ -117,7 +128,7 @@ const Profile = (props) => {
             <span></span>
           </span>
         </div>
-      </div>
+      </div> */}
       <Footer></Footer>
     </div>
   )

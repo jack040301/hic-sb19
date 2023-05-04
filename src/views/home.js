@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState, useContext } from 'react'
+import { Link, useHistory } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
@@ -12,12 +12,27 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'; 
 
 import { Slider } from '../components/slider'
-
-
+import { StringContext } from '../views/context'
 
 const Home = (props) => {
 
- 
+  
+  const { setStringToSend } = useContext(StringContext);
+
+
+
+  const handleClick = () => {
+
+    
+    const string = 'Hello, world!';
+
+console.log(string)
+
+
+
+  };
+
+  
 
   useEffect(()=>{
     AOS.init({duration: 2000});
@@ -205,6 +220,8 @@ const Home = (props) => {
         <div className="home-container22" data-aos="flip-up">
           <h6 className="home-text35">
             <span>THE MEMBERS</span>
+            <button type="button"  onClick={handleClick}> hii</button>
+
           </h6>
           <h3 className="home-text37 Healine">
           Where words fail, music speaks
@@ -217,7 +234,8 @@ const Home = (props) => {
         </div>
         <div className="home-team">
           <div className="home-container23">
-            <Link to="/profile" className="home-navlink">
+          
+          <Link to="/profile" onClick={handleClick}  className="home-navlink">
               <div className="home-container24" data-aos="fade-up">
                 <MemberDetails image_src="/playground_assets/pablo.jpg"></MemberDetails>
             
