@@ -98,7 +98,7 @@ const Header = (props) => {
           </div>
         </div>
         <div className="header-mid">
-          <Link to="/profile" className="header-navlink4">
+          <Link to="/developers" className="header-navlink4">
             <div className="header-container4">
               <svg viewBox="0 0 1024 1024" className="header-icon17">
                 <path
@@ -106,7 +106,7 @@ const Header = (props) => {
                   className=""
                 ></path>
               </svg>
-              <span className="header-text2 TextSM">PROFILE</span>
+              <span className="header-text2 TextSM">About</span>
             </div>
           </Link>
         {/*   <Link to="/blog-post" className="header-navlink5">
